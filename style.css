@@ -81,6 +81,10 @@ a:hover i {
 
 /* header */
 
+.header-mobile {
+  display: none;
+}
+
 .header-desktop {
   width: 75%;
   margin: auto;
@@ -90,6 +94,10 @@ a:hover i {
 .header-left {
   display: flex;
   align-items: center;
+}
+
+.header-left img {
+  display: block;
 }
 
 .header-container {
@@ -397,7 +405,9 @@ a:hover i {
 }
 
 .questions-main {
-  margin: 50px 0;
+  margin: 50px auto;
+  border-top: 1px solid hsla(229, 8%, 60%, 0.5);
+  width: 540px;
 }
 
 .questions-footer {
@@ -405,7 +415,6 @@ a:hover i {
 }
 
 .q-and-a {
-  border-top: 1px solid hsla(229, 8%, 60%, 0.5);
   border-bottom: 1px solid hsla(229, 8%, 60%, 0.5);
   width: 540px;
   margin: auto;

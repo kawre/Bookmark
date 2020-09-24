@@ -282,8 +282,8 @@ a:hover i {
 
 .output-right {
   text-align: left;
-  width: 384px;
-  margin-left: 125px;
+  width: 536px;
+  padding-left: 125px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -433,13 +433,10 @@ a:hover i {
 .question-answer {
   display: none;
   margin-top: 35px;
-  height: 0;
-  transition: 0.4s ease-in-out;
 }
 
 .show-text .question-answer {
   display: block;
-  height: auto;
 }
 
 .btn-minus {

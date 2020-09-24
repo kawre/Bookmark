@@ -33,11 +33,26 @@ featuresBtn.forEach((item) => {
 
 /* Q&A */
 
-const question = document.querySelectorAll(".question");
+const qanda = document.querySelectorAll(".q-and-a");
 
-question.forEach(function (btn) {
-  btn.addEventListener("click", function (e) {
+/*qanda.forEach(function (btn) {
+  const questionShow = btn.children[0];
+  console.log(questionShow);
+  questionShow.addEventListener("click", function (e) {
     const questionContainer = e.currentTarget.parentElement;
     questionContainer.classList.toggle("show-text");
+  });
+});*/
+
+qanda.forEach(function (btn) {
+  const questionShow = btn.children[0];
+
+  questionShow.addEventListener("click", function (item) {
+    qanda.forEach(function (e) {
+      if (e !== btn) {
+        e.classList.remove("show-text");
+      }
+    });
+    btn.classList.toggle("show-text");
   });
 });

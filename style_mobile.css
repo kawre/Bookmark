@@ -323,3 +323,12 @@ header ul {
 .extension {
   margin: 125px 0;
 }
+
+.features-button {
+  width: 310px;
+}
+
+.button-underline {
+  width: 142px;
+  top: 0;
+}

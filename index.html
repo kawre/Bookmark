@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" media="(max-width: 800px)" href="style_mobile.css" />
+    <link rel="stylesheet" media="(max-width: 850px)" href="style_mobile.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -362,12 +362,23 @@
         <div class="utd-container">
           <p class="p-utd">35.000+ ALREADY JOINED</p>
           <h2>Stay up-to-date with what we're doing</h2>
-          <form>
-            <input
-              id="email"
-              type="email"
-              placeholder="Enter your email address"
-            />
+          <form novalidate>
+            <div class="input">
+              <div class="input-alert-bg">
+                <p class="alert-text">Whoops, make sure it's an email</p>
+              </div>
+              <input
+                id="email"
+                type="email"
+                placeholder="Enter your email address"
+              />
+              <div class="alert-border"></div>
+              <img
+                class="alert-img"
+                src="/images/exclamation-circle-solid.svg"
+                alt=""
+              />
+            </div>
             <button class="utd-btn btn" type="submit">Contact Us</button>
           </form>
         </div>

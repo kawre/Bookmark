@@ -279,6 +279,7 @@ a:hover i {
 .output-right {
   text-align: left;
   width: 536px;
+  height: 346px;
   padding-left: 125px;
   display: flex;
   flex-direction: column;
@@ -289,10 +290,12 @@ a:hover i {
 .output-bg {
   position: relative;
   margin-left: -60px;
+  width: 536px;
 }
 
 .output-bg img {
   display: block;
+  float: right;
 }
 
 .output-bg::before {
@@ -308,6 +311,10 @@ a:hover i {
   right: 75px;
   border-top-right-radius: 999px;
   border-bottom-right-radius: 999px;
+}
+
+.content {
+  display: none;
 }
 
 /* extension */
@@ -577,4 +584,8 @@ footer {
 
 .mobile-nav {
   display: none;
+}
+
+.active {
+  display: flex;
 }

@@ -1,3 +1,5 @@
+// mobile nav bar
+
 const hamBtn = document.querySelector(".hamburger-btn");
 const mobileNav = document.querySelector(".mobile-nav");
 const headerMobile = document.querySelector(".header-mobile");
@@ -23,26 +25,31 @@ function changeImage() {
   }
 }
 
-featuresBtn.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    const parent = e.currentTarget.parentElement.children[1];
-    parent.classList.add("show-underline");
-    console.log(e.currentTarget.parentElement);
-  });
+// buttons
+
+const btns = document.querySelectorAll(".features-btn");
+const about = document.querySelector(".features-content");
+const articles = document.querySelectorAll(".content");
+const lines = document.querySelectorAll(".button-underline");
+
+about.addEventListener("click", function (e) {
+  const id = e.target.dataset.id;
+  if (id) {
+    lines.forEach(function (line) {
+      line.classList.remove("show-underline");
+      e.target.parentElement.children[1].classList.add("show-underline");
+    });
+    articles.forEach(function (article) {
+      article.classList.remove("active");
+    });
+    const element = document.getElementById(id);
+    element.classList.add("active");
+  }
 });
 
-/* Q&A */
+// Q&A
 
 const qanda = document.querySelectorAll(".q-and-a");
-
-/*qanda.forEach(function (btn) {
-  const questionShow = btn.children[0];
-  console.log(questionShow);
-  questionShow.addEventListener("click", function (e) {
-    const questionContainer = e.currentTarget.parentElement;
-    questionContainer.classList.toggle("show-text");
-  });
-});*/
 
 qanda.forEach(function (btn) {
   const questionShow = btn.children[0];

@@ -126,40 +126,85 @@
               you can access them on the go.
             </p>
           </div>
-          <div class="features-buttons">
-            <div class="features-button">
-              <button class="features-btn-simple features-btn">
-                Simple Bookmarking
-              </button>
-              <div class="button-underline show-underline"></div>
+          <div class="features-content">
+            <div class="features-buttons">
+              <div class="features-button">
+                <button
+                  class="features-btn-simple features-btn"
+                  data-id="simple"
+                >
+                  Simple Bookmarking
+                </button>
+                <div class="button-underline show-underline"></div>
+              </div>
+              <div class="features-button">
+                <button
+                  class="features-btn-speedy features-btn"
+                  data-id="search"
+                >
+                  Speedy Searching
+                </button>
+                <div class="button-underline"></div>
+              </div>
+              <div class="features-button">
+                <button class="features-btn-easy features-btn" data-id="share">
+                  Easy Sharing
+                </button>
+                <div class="button-underline"></div>
+              </div>
             </div>
-            <div class="features-button">
-              <button class="features-btn-speedy features-btn">
-                Speedy Searching
-              </button>
-              <div class="button-underline"></div>
-            </div>
-            <div class="features-button">
-              <button class="features-btn-easy features-btn">
-                Easy Sharing
-              </button>
-              <div class="button-underline"></div>
-            </div>
-          </div>
-          <div class="features-output">
-            <div class="output-bg">
-              <img src="/images/illustration-features-tab-1.svg" alt="" />
-            </div>
-            <div class="output-right">
-              <h2>Bookmark in one click</h2>
-              <p>
-                Organize your bookmarks however you like. Our simple
-                drag-and-drop interface gives you complete control over how you
-                manage your favourite sites.
-              </p>
-              <a href=""
-                ><button class="features-btn-info btn">More Info</button></a
-              >
+            <div class="features-output">
+              <!--single item-->
+              <div class="content active" id="simple">
+                <div class="output-bg">
+                  <img src="/images/illustration-features-tab-1.svg" alt="" />
+                </div>
+                <div class="output-right">
+                  <h2>Bookmark in one click</h2>
+                  <p>
+                    Organize your bookmarks however you like. Our simple
+                    drag-and-drop interface gives you complete control over how
+                    you manage your favourite sites.
+                  </p>
+                  <a href=""
+                    ><button class="features-btn-info btn">More Info</button></a
+                  >
+                </div>
+              </div>
+              <!--single item-->
+              <div class="content" id="search">
+                <div class="output-bg">
+                  <img src="/images/illustration-features-tab-2.svg" alt="" />
+                </div>
+                <div class="output-right">
+                  <h2>Intelligent search</h2>
+                  <p>
+                    Our powerful search feature will help you find saved sites
+                    in no time at all. No need to trawl through all of your
+                    bookmarks.
+                  </p>
+                  <a href=""
+                    ><button class="features-btn-info btn">More Info</button></a
+                  >
+                </div>
+              </div>
+              <!--single item-->
+              <div class="content" id="share">
+                <div class="output-bg">
+                  <img src="/images/illustration-features-tab-3.svg" alt="" />
+                </div>
+                <div class="output-right">
+                  <h2>Share your bookmarks</h2>
+                  <p>
+                    Easily share your bookmarks and collections with others.
+                    Create a shareable link that you can send at the click of a
+                    button.
+                  </p>
+                  <a href=""
+                    ><button class="features-btn-info btn">More Info</button></a
+                  >
+                </div>
+              </div>
             </div>
           </div>
         </div>

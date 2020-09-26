@@ -179,7 +179,6 @@ header ul {
 
 .features-btn {
   padding: 20px 0;
-  border-bottom: 1px solid hsla(229, 8%, 60%, 0.25);
   width: 100%;
 }
 
@@ -217,7 +216,7 @@ header ul {
 
 .question button {
   font-size: 20px;
-  margin: 0;
+  margin: 0 0 0 10px;
 }
 
 .utd-container {
@@ -226,6 +225,11 @@ header ul {
 
 .utd-container form {
   flex-direction: column;
+  width: 310px;
+}
+
+.utd-container input {
+  width: 310px;
 }
 
 .utd-container h2 {
@@ -290,14 +294,19 @@ header ul {
 }
 
 .features-output {
-  flex-direction: column;
   width: 310px;
   margin: auto;
-  gap: 90px;
+}
+
+.content {
+  flex-direction: column;
+  gap: 80px;
 }
 
 .output-bg {
   margin: 0;
+  width: auto;
+  height: 201px;
 }
 
 .output-bg::before {
@@ -308,16 +317,14 @@ header ul {
 
 .output-bg img {
   width: 100%;
+  float: unset;
 }
 
 .output-right {
-  margin: 0;
+  padding: 0;
   text-align: center;
   width: 100%;
-}
-
-.features-btn-info {
-  display: none;
+  height: 250px;
 }
 
 .extension {
@@ -331,4 +338,5 @@ header ul {
 .button-underline {
   width: 142px;
   top: 0;
+  margin: auto;
 }

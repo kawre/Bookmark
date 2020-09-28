@@ -74,17 +74,14 @@ submitBtn.addEventListener("submit", function (e) {
   e.preventDefault();
   const input = document.querySelector(".input");
   const email = document.getElementById("email").value;
-  const alertImg = document.querySelector(".alert-img");
 
   const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (email.match(pattern)) {
     input.classList.add("valid");
     input.classList.remove("invalid");
-    alertImg.src = "/images/check-circle-solid.svg";
   } else {
     input.classList.add("invalid");
     input.classList.remove("valid");
-    alertImg.src = "/images/exclamation-circle-solid.svg";
   }
   input.addEventListener("keydown", () => {
     input.classList.remove("invalid");
